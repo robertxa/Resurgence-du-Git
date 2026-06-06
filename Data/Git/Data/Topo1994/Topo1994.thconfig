@@ -12,14 +12,13 @@ encoding  utf-8
 # les donnees du dessin, comme ça, ce fichier thconfig appelera 
 # nomcavite.th" et a son tour, "nomcavite.th" appelera
 # "nomcavite.th2")
-source GC-tot.th
+source Topo1994-tot.th
 
 # Add Coordinates
 #input legendes/entrances_coordinates.th
 
 # Add config file
-#input ../../../../config.thc	# Chemin pour structure dossier Xavier
-input config.thc	# Chemin pour envoi à Jean-Paul
+input ../../../../config.thc	# Chemin pour structure dossier Xavier
   
 # 2-LAYOUT   
 # Debut de la definition du Layout "xviexport"
@@ -40,12 +39,12 @@ layout my_layout
 	# Call the config settings (Layout config inside the config.thc file)
 	
 	#copy Coords_Header_Aspirateur
-	copy drawingconfig
+	copy drawinTopo1994onfig
 	copy headerl
 	copy langue-fr
 	
 	# Titre  
-	doc-title "Scialet de l'Aspirateur - Galerie Claire - Plan"
+	doc-title "Grotte du Git - Plan"
 	doc-author "Xavier Robert"
   
 	# Pour faire la topo dans le system UTM  
@@ -96,7 +95,7 @@ layout my_layout
 	opacity 75
   
 	# Un commentaire a ajounter au titule,
-	map-comment "Scialet de l'Aspirateur - <it>Plan<ss> - La-Chapelle-en-Vercors, 26, France"
+	map-comment "Grotte du Git - <it>Plan<ss> - Saint-Quentin-en-Isère, 38, France"
   
 	# Afficher les statistiques d explo par équipe/nom. C est lourd
 	# si la cavite est importante et qu il y a beaucoup d explorateurs
@@ -160,10 +159,10 @@ layout my_layout
 		\edef\nostring{}            % empty string
 		\ifx\temp\nostring          % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Galerie Claire} 		
+			\cavename={Grotte du Git} 		
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Interclub La Chapelle}
+		\newtoks\club \club={}
 	endcode  
 
 endlayout
@@ -173,12 +172,12 @@ layout layout-coupe
 	# Call the config settings (Layout config inside the config.thc file)
 	
 	#copy Coords_Header_Aspirateur
-	copy drawingconfig
+	copy drawinTopo1994onfig
 	copy header_coupe
 	copy langue-fr
 	
 	# Titre  
-	doc-title "Scialet de l'Aspirateur - Galerie Claire - Coupe développée"
+	doc-title "Grotte du Git - Coupe développée"
 	doc-author "Xavier Robert"
   
 	# Pour faire la topo dans le system UTM  
@@ -230,7 +229,7 @@ layout layout-coupe
 	opacity 75
   
 	# Un commentaire a ajounter au titule,
-	map-comment "Scialet de l'Aspirateur - <it>Coupe développée<ss> - La-Chapelle-en-Vercors, 26, France"
+	map-comment "Grotte du Git- <it>Coupe développée<ss> - Saint-Quentin-en-Isère, 38, France"
   
 	# Afficher les statistiques d explo par équipe/nom. C est lourd
 	# si la cavite est importante et qu il y a beaucoup d explorateurs
@@ -296,19 +295,19 @@ layout layout-coupe
 		\edef\nostring{}            % empty string
 		\ifx\temp\nostring          % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Galerie Claire} 		
+			\cavename={Grotte du Git} 		
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Interclub La Chapelle}
+		\newtoks\club \club={}
 	endcode  
 
 endlayout
 layout AtlasPlan
 	# Call the config settings (Layout config inside the config.thc file)
-	copy LayoutAtlasNorthArrow	# This line should be BEFORE the line copy drawingconfig, 
+	copy LayoutAtlasNorthArrow	# This line should be BEFORE the line copy drawinTopo1994onfig, 
 	                           	# otherwise the North Arrow size does not fit well
 	#copy Coords_Header_JBJB		# Pour rajouter les coordonnées des entrées
-	copy drawingconfig			# Pour modifier les symboles
+	copy drawinTopo1994onfig			# Pour modifier les symboles
 	copy AtlasSetUp				# pour faire le setup de l'Atlas
 	copy headeratlas 			# Gere le header de l'Atlas
 	copy langue-fr				# Pour avoir la langue française dans le header et les légendes
@@ -361,7 +360,7 @@ layout AtlasPlan
 	layers on
 
 	# Titule
-	doc-title "Gouffre Jean-Bernard - 1:1000"
+	doc-title "Grotte du Git - 1:1000"
 	map-header 40 35 nw
 	map-header-bg off
   	legend off
@@ -390,10 +389,10 @@ layout AtlasPlan
 		\edef\nostring{}                 % empty string 
 		\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Galerie Claire - Scialet de l'Aspirateur} 
+			\cavename={Grotte du Git} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Interclub La Chapelle}
+		\newtoks\club \club={}
 		#\newtoks\synth \synth={Pierre Rias (1981), Christophe Ohl (1991), Xavier Robert (2019)}
 		#\newtoks\thanksto \thanksto={Jean Moatti, Charlotte Carpentier et Tendi Sherpa, les inconditionnels gardiens du refuge du Folly, ainsi qu'à la municipalité de Samoëns. Sans leur appui, les explorations du massif du Folly ne seraient pas possibles sans organiser des camps d'altitudes lourds.}		
 	endcode   
@@ -402,15 +401,14 @@ endlayout
 # 3-EXPORTS   
 
 # Select maps
-	select MP-GC-plan-tot@GClaire
+	select MP-Topo1994-plan-tot@Topo1994
 	#select MC-Aspirateur-coupe-tot@Aspirateur
 
-export map -projection plan -fmt xvi -o Data/plan2024.xvi  -layout xviexport
-export map -projection extended -fmt xvi -o Data/coupe2024.xvi  -layout xviexport
+export map -projection plan -fmt xvi -o Data/Topo1994.xvi  -layout xviexport
+export map -projection extended -fmt xvi -o Data/coupe1994.xvi  -layout xviexport
 
 
-export map -o Outputs/Aspirateur-plan2024-EV.pdf -layout my_layout
-export map -projection extended -o Outputs/Aspirateur-coupe2024-EV.pdf -layout layout-coupe
-#export atlas -projection plan -fmt pdf -o Outputs/Aspirateur-2024EV--atlas.pdf -layout AtlasPlan
-export model -o Outputs/GClaire.lox
-export survey-list -o Outputs/surveys.html
+export map -o Outputs/Topo1994-plan2024-EV.pdf -layout my_layout
+export map -projection extended -o Outputs/Topo1994-coupe2024.pdf -layout layout-coupe
+export model -o Outputs/Topo1994.lox
+#export survey-list -o Outputs/surveys.html

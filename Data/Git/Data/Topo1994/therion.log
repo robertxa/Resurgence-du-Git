@@ -1,0 +1,196 @@
+therion 6.4.0+dev (compiled on 2026-05-26)
+  - using Proj 9.8.1, compiled against 9.8.1
+initialization file: /Users/robertxa/.therion/therion.ini
+reading ... done
+checking optional fonts csr10 csti10 csbx10 csss10 csssi10 ... OK
+checking optional fonts cmcyr10 cmcti10 cmcbx10 cmcss10 cmcssi10 ... OK
+configuration file: Topo1994.thconfig
+reading ... done
+reading source files ... done
+preprocessing database ... done
+output coordinate system: UTM32
+meridian convergence (deg): 1.445
+geomag declinations (deg):
+  1994.1.1  -1.611
+  1995.1.1  -1.526
+scanning centreline tree ... done
+searching for centerline loops ... done
+calculating station coordinates ... done
+processing survey data ... 
+####################### cavern log file ########################
+ 1> Survex 1.4.21
+ 2> Copyright © 1990-2026 Olly Betts
+ 3> 
+ 4> La topographie contient 94 stations, connectées par 93 visées.
+ 5> Il y a 0 bouclages.
+ 6> Longueur totale de la topographie = 1528.12m (1528.12m ajusté)
+ 7> Longueur totale en projection horizontale = 1453.17m
+ 8> Longueur totale verticale =  294.17m
+ 9> Intervalle vertical = 173.99m (de 87 à 516.99m jusqu’à 11 à 343.00m)
+10> Intervalle Nord-Sud = 732.32m (de 12 à 5019182.99m jusqu’à 90 à 5018450.67m)
+11> Intervalle Est-Ouest = 313.79m (de 94 à 229832.49m jusqu’à 2 à 229518.71m)
+12> 
+######################### transcription ########################
+ 4> 94 : 62@Topo1994.Topo1994 -- 93 : 1994.91@Topo1994.Topo1994
+ 9> 87 : 1994.85@Topo1994.Topo1994 -- 11 : 1994.9@Topo1994.Topo1994
+10> 12 : 1994.10@Topo1994.Topo1994 -- 90 : 1994.88@Topo1994.Topo1994
+11> 94 : 62@Topo1994.Topo1994 -- 2 : 0@Topo1994.Topo1994
+#################### end of cavern log file ####################
+done
+calculating basic statistics ... done
+processing extended elevation ... done
+processing references ... 
+therion: warning -- Topo1994.thconfig [37] -- source layout not found -- drawinTopo1994onfig
+
+therion: warning -- Topo1994.thconfig [170] -- source layout not found -- drawinTopo1994onfig
+
+therion: warning -- Topo1994.thconfig [305] -- source layout not found -- drawinTopo1994onfig
+done
+selecting export objects ... 
+therion: warning -- Topo1994.thconfig [404] -- object not found -- "MP-Topo1994-plan-tot"
+done
+processing projection plan ... done
+writing Data/Topo1994.xvi ... done
+processing projection extended ... done
+writing Data/coupe1994.xvi ... done
+
+
+############### export maps & scraps selection #################
+S     -.-- @ ()
+########## end of export maps & scraps selection ###############
+writing Outputs/Topo1994-plan2024-EV.pdf ...
+####################### metapost log file ########################
+This is MetaPost, version 2.11 (TeX Live 2025) (kpathsea version 6.4.1)  6 JUN 2026 09:44
+**data.mp
+(/usr/local/texlive/2025/texmf-dist/metapost/base/mpost.mp
+(/usr/local/texlive/2025/texmf-dist/metapost/base/plain.mp
+Preloading the plain mem file, version 1.005) ) (./data.mp
+{randomseed:=42}
+ [1] [2] [3] [4]
+[5] [6] [7] [8] [9] [10] [11] [12] [13] [14]
+[1] [2] (./mptextmp.mp) (./mptextmp.mp) (./mptextmp.mp) (./mptextmp.mp)
+(./mptextmp.mp) (./mptextmp.mp) [3] )
+ 
+Here is how much of MetaPost's memory you used:
+ 1592 strings using 62332 characters
+ 3403896 bytes of node memory
+ 1696 symbolic tokens
+ 9i,82n,12p,312b,5f stack positions out of 16i,98n,15p,312b,6f
+17 output files written: data-patt.1 .. data-patt.14
+
+
+#################### end of metapost log file ####################
+converting scraps ... done
+making map ... done
+######################## pdftex log file #########################
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdftex 2025.10.9)  6 JUN 2026 09:44
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**data.tex
+(./data.tex (./th_enc.tex) (./th_texts.tex) (./th_resources.tex
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pdftex/glyphtounicode.tex))
+(./th_fontdef.tex{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdf
+tex.map}) (./th_fontdef2.tex)
+(./th_formdef.tex) (./th_pagedef.tex) (./th_pages.tex)
+ 51 numeric registers used out of 32768
+ [1] ) 
+Here is how much of TeX's memory you used:
+ 323 strings out of 494562
+ 4353 string characters out of 6145051
+ 76875 words of memory out of 5000000
+ 1990 multiletter control sequences out of 15000+600000
+ 21194 words of font info for 66 fonts, out of 8000000 for 9000
+ 1416 hyphenation exceptions out of 8191
+ 9i,5n,8p,1736b,56s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10
+.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10
+.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.
+pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cs/csssi10.pfb>
+Output written on data.pdf (1 page, 56164 bytes).
+PDF statistics:
+ 46 PDF objects out of 1000 (max. 8388607)
+ 28 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+
+
+##################### end of pdftex log file #####################
+done
+
+
+############### export maps & scraps selection #################
+S     -.-- @ ()
+########## end of export maps & scraps selection ###############
+writing Outputs/Topo1994-coupe2024.pdf ...
+####################### metapost log file ########################
+This is MetaPost, version 2.11 (TeX Live 2025) (kpathsea version 6.4.1)  6 JUN 2026 09:44
+**data.mp
+(/usr/local/texlive/2025/texmf-dist/metapost/base/mpost.mp
+(/usr/local/texlive/2025/texmf-dist/metapost/base/plain.mp
+Preloading the plain mem file, version 1.005) ) (./data.mp
+{randomseed:=42}
+ [1] [2] [3] [4]
+[5] [6] [7] [8] [9] [10] [11] [12] [13] [14]
+[1] [2] (./mptextmp.mp) (./mptextmp.mp) (./mptextmp.mp) (./mptextmp.mp)
+(./mptextmp.mp) (./mptextmp.mp) [3] )
+ 
+Here is how much of MetaPost's memory you used:
+ 1592 strings using 62332 characters
+ 3403896 bytes of node memory
+ 1696 symbolic tokens
+ 9i,82n,12p,312b,5f stack positions out of 16i,98n,15p,312b,6f
+17 output files written: data-patt.1 .. data-patt.14
+
+
+#################### end of metapost log file ####################
+converting scraps ... done
+making map ... done
+######################## pdftex log file #########################
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdftex 2025.10.9)  6 JUN 2026 09:44
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**data.tex
+(./data.tex (./th_enc.tex) (./th_texts.tex) (./th_resources.tex
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pdftex/glyphtounicode.tex))
+(./th_fontdef.tex{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdf
+tex.map}) (./th_fontdef2.tex)
+(./th_formdef.tex) (./th_pagedef.tex) (./th_pages.tex)
+ 51 numeric registers used out of 32768
+ [1] ) 
+Here is how much of TeX's memory you used:
+ 323 strings out of 494562
+ 4353 string characters out of 6145051
+ 76775 words of memory out of 5000000
+ 1990 multiletter control sequences out of 15000+600000
+ 21194 words of font info for 66 fonts, out of 8000000 for 9000
+ 1416 hyphenation exceptions out of 8191
+ 9i,5n,8p,1736b,56s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10
+.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10
+.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.
+pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cs/csssi10.pfb></usr
+/local/texlive/2025/texmf-dist/fonts/type1/public/cs/csti10.pfb>
+Output written on data.pdf (1 page, 59637 bytes).
+PDF statistics:
+ 51 PDF objects out of 1000 (max. 8388607)
+ 31 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+
+
+##################### end of pdftex log file #####################
+done
+writing Outputs/Topo1994.lox ... done
+compilation time: 2 sec
+
+############# CRS transformations chosen by PROJ ###############
+  Area of Use (AoU): (5.552, 45.274) (5.552, 45.274)
+  [UTM32 → LONG-LAT] AoU: [yes] transformation: [Inverse of UTM zone 32N (with axis order normalized for visualization)] definition: [proj=pipeline step inv proj=utm zone=32 ellps=WGS84 step proj=unitconvert xy_in=rad xy_out=deg] accuracy: [-1.000 m]
+  [UTM32 → UTM32] AoU: [yes] transformation: [Inverse of UTM zone 32N + UTM zone 32N] definition: [proj=noop ellps=GRS80] accuracy: [0.000 m]
+  [UTM32 → EPSG:4326] AoU: [yes] transformation: [Inverse of UTM zone 32N (with axis order normalized for visualization)] definition: [proj=pipeline step inv proj=utm zone=32 ellps=WGS84 step proj=unitconvert xy_in=rad xy_out=deg] accuracy: [-1.000 m]
+  [EPSG:4326 → UTM32] AoU: [yes] transformation: [UTM zone 32N (with axis order normalized for visualization)] definition: [proj=pipeline step proj=unitconvert xy_in=deg xy_out=rad step proj=utm zone=32 ellps=WGS84] accuracy: [-1.000 m]
+  [EPSG:27572 → LAT-LONG] AoU: [no] transformation: [Inverse of Lambert zone II + NTF (Paris) to NTF (1) + NTF to WGS 84 (1) (with axis order normalized for visualization)] definition: [proj=pipeline step inv proj=lcc lat_1=46.8 lat_0=46.8 lon_0=0 k_0=0.99987742 x_0=600000 y_0=2200000 ellps=clrk80ign pm=paris step proj=push v_3 step proj=cart ellps=clrk80ign step proj=helmert x=-168 y=-60 z=320 step inv proj=cart ellps=WGS84 step proj=pop v_3 step proj=unitconvert xy_in=rad xy_out=deg] accuracy: [2.000 m]
+  [EPSG:27572 → UTM32] AoU: [yes] transformation: [Inverse of Lambert zone II + NTF (Paris) to NTF (1) + NTF to WGS 84 (1) + UTM zone 32N] definition: [proj=pipeline step inv proj=lcc lat_1=46.8 lat_0=46.8 lon_0=0 k_0=0.99987742 x_0=600000 y_0=2200000 ellps=clrk80ign pm=paris step proj=push v_3 step proj=cart ellps=clrk80ign step proj=helmert x=-168 y=-60 z=320 step inv proj=cart ellps=WGS84 step proj=pop v_3 step proj=utm zone=32 ellps=WGS84] accuracy: [2.000 m]
+########## end of CRS transformations chosen by PROJ ###########

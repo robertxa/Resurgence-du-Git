@@ -1,0 +1,63 @@
+# Copyright (C) 2025 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+encoding utf-8
+
+survey Topo2025 -title "Résurgence du Git"
+    #Version	5.12																						
+    #Verification	1																						
+
+
+        centerline
+
+        explo-date 2025.01.01
+            explo-team "Stéphane Lips"
+            explo-team "Cédric Lacharmoise"
+
+        date 2025.01.01
+            team "Stéphane Lips"
+            team "Cédric Lacharmoise"
+        units length meters
+        units compass clino grads
+        #declination 2.5119 degrees
+
+        data normal from to length compass clino left right up down
+        #data topofil from to fromcount to count compass clino left right up down
+																							
+            #Param	Deca	Degd	Clino	Degd	2.5119	Dir,Dir,Dir	Inc	Std	01/01/2025	M													
+																							
+2025	2025b	0	0	0	0	1	3	0	# Fil S4									
+2025	2025.1	2.08	202.5	2	0.3	0.3	3	0	
+2025.1	2025.2	9.56	295.8	1	1.4	2.4	2.2	0	
+2025.2	2025.3	10.1	270.1	30	0.6	1.2	0	1.4	
+2025.3	2025.4	8.05	333.4	-7	0.25	0.6	0.88	0.5	
+2025.4	2025.5	14.72	282.5	-1	0.7	0.3	5.45	2	
+2025.5	2025.6	7.12	293	-2	0	3	2.5	1	
+2025.6	2025.7	7.83	305.9	-4	2	1.5	2.1	2	
+2025.7	2025.8	8.9	246.7	-6	0	2.2	2.2	2.15	
+2025.8	2025.9	9.45	319	-15	1.6	0	6	3.4	
+2025.9	2025.10	21.72	254.5	1	8.9	1.21	10.5	2.3	
+2025.10	2025.11	12.5	261.1	-36	2	1	6	0	# Vasque S3									
+
+2025.3	2025.12	8.54	311.2	13	1	1	2	1
+2025.12	2025.13	4.74	304.7	-26	1	1	3.8	2.5	
+2025.13	2025.14	6.1	288.6	-3	0.7	0.3	5.45	2	
+
+    endcenterline
+
+endsurvey
+																							
+#[Cofiguration	5.12]																						
+																							
+#Visual	Topo=2,3,-1,-1,-1,-1,306,38,1331,563																						
+#Options=1,1																							
+#Calcul=0,1,-1,-1,-8,-31,0,0,901,284																							
+#Options=43,2,0,1,0																							
+#ExportDxf=0,100,1295,0,0,1,6,7,4,4,3,3,2,7,9,9,3																							
+#ExportSvg=0,100,1423,0,0,10917,8355711,16711680,37632,37632,9109504,9109504,255,0,8355711,7451452,6008319,12632256,9109504																							
+#ExportKml=0																							
+#ExportShp=0,0,0																							
+#Colonnes=11.00,11.00,9.00,9.00,9.00,9.00,9.00,9.00,9.00,9.00,9.00,2.00,3.00,2.00,2.00,4.00,0.38,9.00,9.00,9.00,9.00,9.00,0.38,0.00,0.00																							
+#Coupe	d�velopp�e=2,3,-1,-1,-8,-31,52,52,1686,689																						
+#Options=35841,1.00,0,0,0,0,0,1,0,1																							

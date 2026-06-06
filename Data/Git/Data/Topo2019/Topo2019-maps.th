@@ -1,0 +1,17 @@
+encoding  utf-8
+
+# Copyright (C) 2020 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+#map MP-Topo2019-plan-tot -title "Grotte du Git - Scialet de l'Aspirateur"
+map MP-Topo2019-plan-tot -title "Grotte du Git"
+#map MP-Topo2019-plan-tot -title "Grotte du Git"
+	SP-Topo20192024-1
+	
+endmap
+
+#map MC-Topo2019-tot -title "Grotte du Git"
+#	SC-Bruyant-1
+#endmap
+   

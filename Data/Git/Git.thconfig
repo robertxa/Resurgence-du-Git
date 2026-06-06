@@ -348,3 +348,4 @@ export model -fmt kml -o Outputs/Git-filaire.kml
 
 # export de la base de données
 #export database -o Outputs/database.sql
+export survey-list -o Outputs/Surveys.html
